@@ -1,0 +1,9 @@
+<h1> <%= @categories.name%> </h1>
+<% if @post.each do |t| %>
+	<h3><%= link_to t.title, t %> </h3>
+	<p> <%= t.body%> </p>
+<%end.empty?%>
+	<p> Sorry, no posts here.</p>
+<%end%>
+
+<%= link_to "Back", categories_path %>
