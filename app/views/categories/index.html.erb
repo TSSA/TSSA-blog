@@ -1,9 +1,11 @@
-<h1> <%= @categories.name%> </h1>
-<% if @post.each do |t| %>
-	<h3><%= link_to t.title, t %> </h3>
-	<p> <%= t.body%> </p>
-<%end.empty?%>
-	<p> Sorry, no posts here.</p>
-<%end%>
+<h1>Listing categories</h1>
 
-<%= link_to "Back", categories_path %>
+<ul>
+    
+    <% @category.each do |category| %>
+      
+      <li><%= link_to category.name, category %> </li>
+    
+    <% end %>
+    
+</ul>
