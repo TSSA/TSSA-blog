@@ -1,7 +1,7 @@
 <h1>Blog Posts</h1>
 <% if @post.each do |post| %>
 	<h4> <%= link_to post.title, post %> </h4>
-	<p> <%= post.description%> </p>
+	<div> <%= post.description.html_safe%> </div>
 	<hr>
 	<%end.empty?%>
 	<p>Sorry, we have no posts yet</p>
