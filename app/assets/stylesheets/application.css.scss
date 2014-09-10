@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+*{
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+.flash {
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.75em;
+  font-family: Monospace Serif;
+}
+.error {
+  color: darken(red, 10%);
+  background-color: lighten(red, 10%);
+  border: 3px solid lighten(red, 5%);
+}
+.notice {
+  color: darken(green, 10%);
+  background-color: lighten(green, 10%);
+  border: 3px solid lighten(green, 5%);
+}
+.container {
+  width: 80%;
+  margin: 5px auto;
+}
+.post{
+  h4{
+    font-family: Serif;
+    font-size: 1.25em;
+    padding: 2px;
+    margin: 5px;
+  }
+  p{
+    font-family: Sans-serif;
+    font-size: 0.875em;
+    
+  }
+}
