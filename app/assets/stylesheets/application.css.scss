@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 *{
   box-sizing: border-box;
 }
@@ -20,16 +21,50 @@ html, body {
   width: 100%;
   height: 100%;
 }
+nav{
+  width: 90%;
+  background-color: lighten(black, 15%);
+  margin: 5px auto;
+  padding: 5px;
+  vertical-align: middle;
+  ul{
+    list-style: none;
+    li{
+    display: inline-block;
+    vertical-align: middle;
+      a{
+        padding: 5px;
+        text-decoration: none;
+        color: darken(white, 10%);
+        vertical-align: middle;
+      }
+      a:hover{
+        background-color: lighten(black, 5%);
+        color: darken(white, 5%);
+        font-weight: bold;
+      }
+    }
+  }
+}
+.header{
+  text-align: center;
+  border-bottom: 1px solid darken(gray, 10%);
+  padding: 5px;
+}
+.hleft{
+  text-align: left;
+}
 .flash {
   margin: 5px;
   padding: 5px;
-  font-size: 0.75em;
+  font-size: 1.5em;
   font-family: Monospace Serif;
+  text-align: center;
 }
 .error {
   color: darken(red, 10%);
-  background-color: lighten(red, 10%);
-  border: 3px solid lighten(red, 5%);
+  background-color: lighten(red, 30%);
+  border: 3px solid darken(red, 10%);
 }
 .notice {
   color: darken(green, 10%);
@@ -43,13 +78,13 @@ html, body {
 .post{
   h4{
     font-family: Serif;
-    font-size: 1.25em;
+    font-size: 1.875em;
     padding: 2px;
     margin: 5px;
   }
   p{
     font-family: Sans-serif;
-    font-size: 0.875em;
-    
+    font-size: 1.5em;
+    line-height: 120%;
   }
 }

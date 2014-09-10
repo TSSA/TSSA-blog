@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    <%Category.all.each do |cat|%>
+      <li><%= link_to cat.name, cat%></li>
+    <%end%>
+  </ul>
+</nav>

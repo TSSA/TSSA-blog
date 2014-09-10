@@ -1,11 +1,12 @@
+<%=render "nav"%>
 <div class="container">
-<h1>Blog Posts</h1>
+  <h1 class="header">Blog Posts</h1>
 <% if @post.each do |post| %>
   <div class="post">
     <h4> <%= post.title%> </h4>
     <p> <%= post.description.html_safe%> </p>
     <%= link_to 'read more', post%>
+  </div>
 <%end.empty?%>
-  <p class="flash notice">Sorry, we have no posts yet</p>
+  <p class="flash error">Sorry, we have no posts yet</p>
 <%end%>
-</div>
