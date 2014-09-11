@@ -5,7 +5,7 @@
   <div class="post">
     <h4> <%= post.title%> </h4>
     <p> <%= post.description.html_safe%> </p>
-    <%= link_to 'read more', post%>
+    <%= link_to 'read more', post, class: "btn" %>
   </div>
 <%end.empty?%>
   <p class="flash error">Sorry, we have no posts yet</p>

@@ -1,5 +1,5 @@
-<nav>
-  <ul>
+<nav class="postnav">
+  <ul class="navul">
     <%Category.all.each do |cat|%>
       <li><%= link_to cat.name, cat%></li>
     <%end%>
