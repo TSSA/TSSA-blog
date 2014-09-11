@@ -1,5 +1,6 @@
 <nav class="postnav">
-  <ul class="navul">
+<ul class="navul">
+  <li><img src="/images/tssa.png" title="Home" alt="TSSA logo"/>
     <%Category.all.each do |cat|%>
       <li><%= link_to cat.name, cat%></li>
     <%end%>
